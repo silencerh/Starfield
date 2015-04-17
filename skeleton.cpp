@@ -10,7 +10,7 @@
 
 #include "SDL.h"
 #include <iostream>
-#include <glm.hpp>
+#include <glm/glm.hpp>
 #include <vector>
 #include "SDLauxiliary.h"
 
@@ -61,7 +61,7 @@ int main( int argc, char* argv[] )
 	while(NoQuitMessageSDL()){
 		Update();
 		Draw();
-		SDL_Delay(0.1);
+		//SDL_Delay(0.1);
 	}
 	SDL_SaveBMP( screen, "screenshot.bmp" );
 	return 0;

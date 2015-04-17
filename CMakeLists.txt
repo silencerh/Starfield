@@ -1,9 +1,9 @@
 # Top-Level CMakeList.txt
 
 cmake_minimum_required (VERSION 2.6)
-project ( Colorful )
+project ( Starfield )
 
-add_executable( Colorful skeleton.cpp)
+add_executable( Starfield skeleton.cpp)
 
 find_package (SDL)
 
@@ -17,6 +17,6 @@ if(SDL_FOUND)
 		${PROJECT_SOURCE_DIR}/glm
 	)
 	#link_libraries(${SDL_LIBRARY})
-	target_link_libraries(Colorful ${SDL_LIBRARY})
+	target_link_libraries(Starfield ${SDL_LIBRARY})
 endif(SDL_FOUND)
 
